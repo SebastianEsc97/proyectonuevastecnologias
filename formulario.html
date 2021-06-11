@@ -1,3 +1,6 @@
+<?php
+    $con= pg_connect("host='localhost dbname=Sistema_Correspondencia port=5432 user=postgres password=1234") or die ("Error de Conexion")
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,57 +8,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <div class="px-5 py-5">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre o título del documento</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Fecha del documento</label>
-                <input class="form-control" type="text" placeholder="DD/MM/AAAA" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Fecha del radicado</label>
-                <input class="form-control" type="text" placeholder="DD/MM/AAAA" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Origen</label>
-                <input class="form-control" type="text" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Destino</label>
-                <input class="form-control" type="text" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Asunto</label>
-                <input class="form-control" type="text" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Usuario quién recibió</label>
-                <input class="form-control" type="text" aria-label="default input example">
-            </div>
-            <div>
-                <label for="exampleInputEmail1" class="form-label">Número de radicado
-                </label>
-                <input class="form-control" type="text" aria-label="default input example">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Anexo</label>
-                <input class="form-control" type="file" id="formFile">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+    <div class="container">
+        <div class="row px-5 py-5 gx-2">
+            <h1 class="text-center primary titulo1">Llene todos los campos</h1>
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Nombre o título del documento</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Origen</label>
+                        <input class="form-control" type="text" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Fecha del documento</label>
+                        <input class="form-control" type="text" placeholder="DD/MM/AAAA"
+                            aria-label="default input example">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Fecha del radicado</label>
+                        <input class="form-control" type="text" placeholder="DD/MM/AAAA"
+                            aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Destino</label>
+                        <input class="form-control" type="text" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Asunto</label>
+                        <input class="form-control" type="text" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Usuario quién recibió</label>
+                        <input class="form-control" type="text" aria-label="default input example">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="exampleInputEmail1" class="form-label">Número de radicado
+                        </label>
+                        <input class="form-control" type="text" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Anexo</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="align-content-center ">
+                    <button type="submit" class="btn btn-primary align-content-center">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
