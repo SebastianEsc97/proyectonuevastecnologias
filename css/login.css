@@ -33,19 +33,21 @@
 }
 
 label{
-    color: blanchedalmond;
+    color: white;
 }
 
 span{
     color: red;
 }
 
-img{
-    width: 50%;
-    height: 30%;
-    margin: 1em 10.8em;
-}
 
 #boton{
     margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
 }

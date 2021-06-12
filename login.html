@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="bootstrap-5.0.1-dist/js/bootstrap.min2.js"></script>
+    <script src="bootstrap-5.0.1-dist/js/validaciones.js"></script>
     <title>Document</title>
 </head>
 <body>
     
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container login-container">
+<div class="container login-container align-content-center">
     <div class="row">
-        <div class="col-md-9 login-form-2">
+        <div class="col-md-12 login-form-2">
             <h1>Iniciar Sesión</h1>
                 <span>* Campos obligatorios</span>
                     <br>
-                <form action="login.html" method="get">
+                <form action="formulario.html" method="get" onsubmit="return validar()">
                     <div class="form-group">
                         <label for="email">Nombre de Usuario:</label>
-                        <input type="email" class="form-control" placeholder="email@mail.com *" value="" />
+                        <input type="email" class="form-control col-md-6" placeholder="email@mail.com *" id="correo" />
                     </div>
                         <br>
                     <div class="form-group">
                         <label for="contraseña">Contraseña:</label>
-                        <input type="password" class="form-control" placeholder="Contraseña *" value="" />
+                        <input type="password" class="form-control col-md-6" placeholder="Contraseña *" id="password"/>
                     </div>
                         <br>
                     
-                    <div class="form-group">
-                        <input type="submit" id="boton" class="btn btn-dark col-md-6" value="Login" />
+                    <div class="form-group text-center">
+                        <input type="submit" id="boton" class="btn btn-dark col-md-4" value="Login" />
                     </div>
-                        <br>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <a href="#" class="btnForgetPwd" value="Login">¿Olvidaste tu contraseña?</a>
                     </div>
                 </form>
