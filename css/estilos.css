@@ -7,3 +7,13 @@ body {
 .titulo1, h1 {
     color: #0d6efd;
 }
+
+a{
+    color: white;
+    text-decoration: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
