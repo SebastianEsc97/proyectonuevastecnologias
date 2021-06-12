@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,69 @@
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
-    <title>Insertar Asunto || KonradFreePaper</title>
+    <title>Asuntos para responder</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row px-5 py-5 gx-2">
-            <h1 class="text-center primary titulo1">Llene todos los campos</h1>
-            <form>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Nombre o título del documento</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Origen</label>
-                        <input class="form-control" type="text" aria-label="default input example">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Fecha del documento</label>
-                        <input class="form-control" type="text" placeholder="DD/MM/AAAA"
-                            aria-label="default input example">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Fecha del radicado</label>
-                        <input class="form-control" type="text" placeholder="DD/MM/AAAA"
-                            aria-label="default input example">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Destino</label>
-                        <input class="form-control" type="text" aria-label="default input example">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Asunto</label>
-                        <input class="form-control" type="text" aria-label="default input example">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Usuario quién recibió</label>
-                        <input class="form-control" type="text" aria-label="default input example">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="exampleInputEmail1" class="form-label">Número de radicado
-                        </label>
-                        <input class="form-control" type="text" aria-label="default input example">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Anexo</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="align-content-center ">
-                    <button type="submit" class="btn btn-primary align-content-center">Enviar</button>
-                </div>
-            </form>
-        </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="formularioUsuario.html">Formulario Usuarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="formularioAsunto.html">Formulario Asuntos</a>
+        </li>
+        <li class="nav-item text-end">
+            <a class="nav-link" href="logina.html">Cerrar Sesión</a>
+        </li>
+    </ul>
+    <h1 class="text-center">Asuntos para responder</h1>
+    <br>
+    <table class="table table-hover">
+        <thead class="table-dark text-center">
+            <tr>
+                <th scope="col">Id_Asunto</th>
+                <th scope="col">Nombre</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr>
+                <td>01</td>
+                <td>Column content</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>02</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Column content</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>04</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Column content</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>06</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>Column content</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>08</td>
+                <td>Column content</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center">
+        <button class="btn btn-primary text-center"><a id="volver" href="asuntosRespuestas.html">
+                Responder a Asuntos</a></button>
     </div>
 </body>
+
 </html>
