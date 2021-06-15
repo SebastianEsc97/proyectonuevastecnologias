@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,28 +11,29 @@
     <script src="bootstrap-5.0.1-dist/js/validaciones.js"></script>
     <title>Login Admins</title>
 </head>
-<body>
-    
-<!------ Include the above in your HEAD tag ---------->
 
-<div class="container login-container align-content-center">
-    <div class="row">
-        <div class="col-md-12 login-form-2">
-            <h1>Iniciar Sesión</h1>
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container login-container align-content-center">
+        <div class="row">
+            <div class="col-md-12 login-form-2">
+                <h1>Iniciar Sesión</h1>
                 <span>* Campos obligatorios</span>
-                    <br>
+                <br>
                 <form action="formularioUsuario.html" method="get" onsubmit="return validar()">
                     <div class="form-group">
                         <label for="email">Nombre de Usuario:</label>
                         <input type="email" class="form-control col-md-6" placeholder="email@mail.com *" id="correo" />
                     </div>
-                        <br>
+                    <br>
                     <div class="form-group">
                         <label for="contraseña">Contraseña:</label>
-                        <input type="password" class="form-control col-md-6" placeholder="Contraseña *" id="password"/>
+                        <input type="password" class="form-control col-md-6" placeholder="Contraseña *" id="password" />
                     </div>
-                        <br>
-                    
+                    <br>
+
                     <div class="form-group text-center">
                         <input type="submit" id="boton" class="btn btn-primary col-md-4" value="Login" />
                     </div>
@@ -41,9 +43,12 @@
                 </form>
             </div>
         </div>
-        <button class="btn btn-outline-info text-center"><a class="text-decoration-none" id="volver" href="login.html">
-            Entrar como Usuario</a></button>
     </div>
-    
+    <div class="text-center my-3">
+        <button class="btn btn-primary text-center"><a class="text-decoration-none text-white" id="volver" href="login.html">
+                Entrar como Usuario</a></button>
+
+    </div>
 </body>
+
 </html>
